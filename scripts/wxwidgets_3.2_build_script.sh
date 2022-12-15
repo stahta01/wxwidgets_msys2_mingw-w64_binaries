@@ -73,14 +73,14 @@ mingw32-make -f makefile.gcc SHELL=cmd.exe \
   COMPILER_VERSION=$_COMPILER_FULL_VERSION \
   MONOLITHIC=0 SHARED=0 UNICODE=1 BUILD=debug
 
-mkdir -p ../../wxMSW-${_wxwidgets_version}_gcc${_COMPILER_FULL_VERSION}_Dev/lib
-cp -R lib/gcc${_COMPILER_FULL_VERSION}_dll/ \
-  ../../wxMSW-${_wxwidgets_version}_gcc${_COMPILER_FULL_VERSION}_Dev/lib/gcc${_COMPILER_FULL_VERSION}_dll/
+mkdir -p ../../../wxMSW-${_wxwidgets_version}_gcc${_COMPILER_FULL_VERSION}_Dev/lib
+cp -R ../../lib/gcc${_COMPILER_FULL_VERSION}_dll/ \
+  ../../../wxMSW-${_wxwidgets_version}_gcc${_COMPILER_FULL_VERSION}_Dev/lib/gcc${_COMPILER_FULL_VERSION}_dll/
 
-mkdir -p ../../wxMSW-${_wxwidgets_version}_gcc${_COMPILER_FULL_VERSION}_static_Dev/lib
-cp -R lib/gcc${_COMPILER_FULL_VERSION}_lib/ \
-  ../../wxMSW-${_wxwidgets_version}_gcc${_COMPILER_FULL_VERSION}_Dev/lib/gcc${_COMPILER_FULL_VERSION}_lib/
+mkdir -p ../../../wxMSW-${_wxwidgets_version}_gcc${_COMPILER_FULL_VERSION}_static_Dev/lib
+cp -R ../../lib/gcc${_COMPILER_FULL_VERSION}_lib/ \
+  ../../../wxMSW-${_wxwidgets_version}_gcc${_COMPILER_FULL_VERSION}_static_Dev/lib/gcc${_COMPILER_FULL_VERSION}_lib/
 
-mkdir -p ../../wxMSW-${_wxwidgets_version}_gcc${_COMPILER_FULL_VERSION}_mono_Dev/lib
-cp -R lib/gcc${_COMPILER_FULL_VERSION}_dllmono/ \
-  ../../wxMSW-${_wxwidgets_version}_gcc${_COMPILER_FULL_VERSION}_Dev/lib/gcc${_COMPILER_FULL_VERSION}_dllmono/
+mkdir -p ../../../wxMSW-${_wxwidgets_version}_gcc${_COMPILER_FULL_VERSION}_mono_Dev/lib
+cp -R ../../lib/gcc${_COMPILER_FULL_VERSION}_dllmono/ \
+  ../../../wxMSW-${_wxwidgets_version}_gcc${_COMPILER_FULL_VERSION}_mono_Dev/lib/gcc${_COMPILER_FULL_VERSION}_dllmono/
